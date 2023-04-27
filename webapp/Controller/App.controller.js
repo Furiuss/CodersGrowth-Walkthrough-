@@ -17,7 +17,7 @@ sap.ui.define(
     return Controller.extend("sap.ui.demo.walkthrought.App", {
       // funcao onShowHello
       onShowHello: function () {
-        // ler mensagem do i18n model        
+        // ler mensagem do i18n model    
         var oBundle = this.getView().getModel("i18n").getResourceBundle();
         var sRecipient = this.getView().getModel().getProperty("/recipient/name");
         var sMsg = oBundle.getText("helloMsg", [sRecipient]);
