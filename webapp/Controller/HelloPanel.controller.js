@@ -8,7 +8,7 @@ sap.ui.define([
     onShowHello: function () {
       // ler mensagem do i18n model    
       var oBundle = this.getView().getModel("i18n").getResourceBundle();
-      var sRecipient = this.getView().getModel().getProperty("/recipient/lastName");
+      var sRecipient = this.getView().getModel().getProperty("/recipient/name");
       var sMsg = oBundle.getText("helloMsg", [sRecipient]);
       MessageToast.show(sMsg);
     },
@@ -22,6 +22,9 @@ sap.ui.define([
       this.pDialog.then(function (oDialog) {
         oDialog.open();
       });
+    },
+    onCloseDialog: function() {
+      this.byId("helloDialog").close();
     }
   })
 })
