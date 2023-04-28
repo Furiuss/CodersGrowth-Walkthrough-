@@ -9,6 +9,10 @@
             src="sap-icon://hello-world"
             size="2rem"
             class="sapUiMediumMargin" />
+            <FormattedText
+            htmlText="Hello {/recipient/name}"
+            class="sapUiSmallMargin myCustomText"            
+            />
       </content>
       <beginButton>
          <Button
