@@ -5,6 +5,7 @@ sap.ui.define([
 ], function (Controller, MessageToast, Fragment) {
   "use strict";
   return Controller.extend("sap.ui.demo.walkthrough.controller.HelloPanel", {
+    
     onShowHello: function () {
       // ler mensagem do i18n model    
       var oBundle = this.getView().getModel("i18n").getResourceBundle();
